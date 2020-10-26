@@ -1,0 +1,26 @@
+{
+  "presets": [
+    [
+      "next/babel"
+    ]
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "@components": "./components",
+          "@config": "./config",
+          "@assets": "./assets"
+        },
+        "import": {
+          "libraryName": "antd",
+          "style": true
+        }
+      }
+    ]
+  ]
+}
